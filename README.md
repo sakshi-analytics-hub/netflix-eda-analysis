@@ -1,72 +1,223 @@
-🎬 Netflix Data Explorer
+
+---
+
+🎬 Netflix Content Insights — Exploratory Data Analysis (EDA)
+
+Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter / Colab
+
+
+---
 
 📌 Project Overview
 
-This is a Netflix Data Analysis project aimed at exploring and understanding trends in movies and TV shows available on Netflix. With the rapid growth of streaming platforms, analyzing content helps uncover patterns in genres, release trends, and audience targeting.
+This project analyzes Netflix’s content dataset to uncover patterns in movies and TV shows. The goal is to understand how content is distributed across countries, genres, ratings, and time.
 
-The project focuses on transforming raw Netflix dataset into meaningful insights using data cleaning, exploratory data analysis (EDA), and visualization techniques. These insights help in understanding how Netflix’s content library has evolved over time.
+The analysis highlights Netflix’s content strategy, growth trends, and audience targeting using Exploratory Data Analysis (EDA) techniques.
 
-🧠 Objectives
 
-Analyze the distribution of movies and TV shows Identify the most popular genres and categories Examine trends in content release over the years Understand ratings and audience targeting patterns Generate insights for content strategy and decision-making
+---
+
+🎯 Objectives
+
+Analyze distribution of Movies vs TV Shows
+
+Identify top content-producing countries
+
+Explore most common genres
+
+Study trends in content addition over time
+
+Compare growth of Movies vs TV Shows
+
+Examine ratings distribution
+
+Analyze movie durations and TV show seasons
+
+Identify frequently appearing directors and actors
+
+Understand regional content preferences
+
+
+---
 
 📁 Project Structure
 
-netflix-data-explorer/ ├── Netflix_Data_Analysis.ipynb # Main analysis notebook
-
-├── data/ # Dataset files
-
-│ └── netflix_dataset.csv
-
-├── visuals/ # Charts and plots
-
-├── reports/ # Optional summaries
-
-└── README.md # Project documentation
+Netflix-Content-Insights/
+│
+├── Netflix_Content_Insights.ipynb   # Main notebook
+├── netflix_titles_2021.csv         # Dataset
+└── README.md                       # Documentation
 
 
-🧰 Tools & Technologies
+---
 
-Python Colab Pandas, NumPy for data processing Matplotlib, Seaborn for visualization
+📊 Dataset Information
 
+Field	Details
 
-📎 Dataset
-
-The dataset used in this project is sourced from Kaggle:
-
-https://www.kaggle.com/
-
-
-📊 Analysis Steps (in Notebook)
-
-Data Loading & Inspection – Load the dataset and check structure, missing values, and data types.
-
-Data Cleaning – Handle null values, remove duplicates, and fix inconsistencies.
-
-Exploratory Data Analysis (EDA) – Analyze distribution of movies and TV shows, genres, and ratings.
-
-Feature Analysis – Compare different attributes such as release year, duration, and category.
-
-Visualizations – Create charts to show trends like genre popularity and yearly content growth.
-
-Insights Extraction – Identify key patterns and meaningful insights from the data.
+Source	Netflix Movies & TV Shows Dataset
+Platform	Kaggle
+Format	CSV
+Records	~8,800 titles
+Columns	type, title, director, cast, country, date_added, release_year, rating, duration, listed_in
 
 
+---
 
-📌 Key Insights
+🧹 Data Cleaning Steps
 
-(You can customize based on your results)
+Handled missing values in director, cast, and country fields
 
-Movies dominate the Netflix content library compared to TV shows Drama and Comedy are among the most popular genres Content production has increased significantly over the years Ratings indicate a strong focus on mature audience content
+Converted date_added to datetime format
+
+Split multi-value columns (country, genre, cast)
+
+Removed duplicates
+
+Created new features for analysis (year-wise trends)
 
 
-📈 Why This Analysis Matters
+---
 
-Understanding content trends helps streaming platforms make better decisions about content production and acquisition. This analysis provides insights into audience preferences, helping improve content strategy and user engagement.
+📈 Analysis Performed
+
+🔹 1. Univariate Analysis
+
+Movies vs TV Shows distribution
+
+Top 10 countries
+
+Ratings distribution
+
+Genre frequency
+
+Movie duration distribution
+
+TV show seasons distribution
 
 
-🧩 Conclusion
+---
 
-This project provides a comprehensive analysis of Netflix’s content dataset by exploring trends, genres, and release patterns. The findings highlight how Netflix has evolved its content strategy over time and adapted to audience preferences.
+🔹 2. Bivariate & Time-Series Analysis
 
-Overall, the project demonstrates how data analysis and visualization can convert raw data into meaningful insights, supporting better decision-making in the streaming industry.
+Year-wise content addition trend
+
+Movies added per year
+
+TV Shows added per year
+
+Country-wise content comparison
+
+Rating comparison (Movies vs TV Shows)
+
+
+---
+
+🔍 Key Insights
+
+🎥 Movies dominate Netflix’s catalog 
+
+🌍 USA and India are major content contributors 
+
+📈 Content growth surged after 2015 and peaked around 2018–2020 
+
+🎭 Dramas and Comedies are the most popular genres 
+
+🔞 TV-MA and TV-14 are the most common ratings 
+
+📺 TV Shows have grown rapidly after 2017 
+
+⏱️ Most movies are 80–120 minutes long 
+
+📉 Growth stabilized after peak expansion years
+
+
+---
+
+🛠️ Technologies Used
+
+Tool	Purpose
+
+Python	Programming language
+Pandas	Data manipulation
+NumPy	Numerical operations
+Matplotlib	Visualization
+Seaborn	Statistical plots
+Jupyter / Colab	Development environment
+
+
+---
+
+▶️ How to Run
+
+1️⃣ Clone the Repository
+
+git clone <your-github-link>
+cd Netflix-Content-Insights
+
+2️⃣ Install Dependencies
+
+pip install pandas numpy matplotlib seaborn jupyter
+
+3️⃣ Run Notebook
+
+jupyter notebook
+
+4️⃣ Load Dataset
+
+df = pd.read_csv("netflix_titles_2021.csv")
+
+
+---
+
+📊 Sample Visualizations
+
+Movies vs TV Shows (Countplot)
+
+Top Countries (Bar Chart)
+
+Yearly Trend (Line Plot)
+
+Ratings Distribution
+
+Genre Analysis
+
+Duration Histogram
+
+
+---
+
+🚀 Future Scope
+
+NLP analysis on descriptions
+
+Recommendation system based on genres
+
+Director & actor network analysis
+
+Regional content comparison
+
+Interactive dashboard (Power BI / Plotly)
+
+
+---
+
+📬 Contact
+👩‍💻 Author: Sakshi Runghe
+📧 Email: sakshi.runghe2002@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/sakshi-runghe-84a4582b2?utm_source=share_via&utm_content=profile&utm_medium=member_android
+🐙 GitHub: https://github.com/sakshi-analytics-hub
+
+
+---
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
+
+
