@@ -203,9 +203,13 @@ Interactive dashboard (Power BI / Plotly)
 ---
 
 📬 Contact
+
 👩‍💻 Author: Sakshi Runghe
+
 📧 Email: sakshi.runghe2002@gmail.com
+
 🔗 LinkedIn: https://www.linkedin.com/in/sakshi-runghe-84a4582b2?utm_source=share_via&utm_content=profile&utm_medium=member_android
+
 🐙 GitHub: https://github.com/sakshi-analytics-hub
 
 
